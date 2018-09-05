@@ -214,5 +214,10 @@ namespace GUI1
             prodStr.Clear();
 
         }
+
+        private void listBox2_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.barbora.lt/paieska?uzklausa=" + listBox2.SelectedItem);
+        }
     }
 }

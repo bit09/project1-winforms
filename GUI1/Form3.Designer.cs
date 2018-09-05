@@ -59,6 +59,7 @@
             this.listBox2.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.listBox2.Size = new System.Drawing.Size(307, 498);
             this.listBox2.TabIndex = 6;
+            this.listBox2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox2_MouseDoubleClick);
             // 
             // button1
             // 
@@ -175,10 +176,11 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form3";
             this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "Main Window";
             this.ResumeLayout(false);
             this.PerformLayout();
 
